@@ -1,6 +1,8 @@
 import 'package:ecommerce_app/user/user.dart';
 
 class Authenticatable {
-  User register(String email, String password) {}
-  bool login(String userName, String password) {}
+  Future<User> register(String email, String password) {}
+  Future<bool> login(String email, String password) {}
+  Future<bool> resetPassword(String email) {}
+  Future<User> updateProfile(User user) {}
 }
